@@ -10,7 +10,7 @@ $(document).ready(function(){
 			dataType: "json",
 			url: "ajax/"+menuType+".json",
 			success: function(data){
-				if(menuType!='x'){
+				if(menuType=='Breakfast' || ){
 					$('#menu').append('<h2>'+menuType+'</h2>');
 					$(data).each(function(i){
 						$('#menu').append('<h3>'+data[i].name+'</h3><p>'+data[i].description+'</p><p><em>'+data[i].price+'</em></p>');
@@ -21,13 +21,5 @@ $(document).ready(function(){
 				}
 			}
 		});
-
-
-
-
-
-
-
-
 	});
 });

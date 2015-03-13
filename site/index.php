@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:700,100' rel='stylesheet' type='text/css'>
-
+	<script src="../../responsive-nav.js"></script>
 </head>
 
 <body>

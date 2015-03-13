@@ -1,10 +1,3 @@
-/*@font-face {
-  font-family: 'neoteric';
-  src:url('assets/font/NEOTERIC.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 @charset "UTF-8";
 
 body {
@@ -18,64 +11,102 @@ body {
   font-weight: 100;
 }
 
-img {right:15%; position: absolute; width:70%; height: auto;}
+img {right:15%; width:70%; display: block; margin: 0 auto;}
+
+a, a:visited, a:hover, a:focus, a:hover{text-decoration: none;}
 
 
-a{text-decoration: none}
-
-/*.scrollToTop{
-	width:100px; 
-	height:130px;
-	padding:10px; 
-	text-align:center; 
-	background: whiteSmoke;
-	font-weight: bold;
-	color: white;
-	text-decoration: none;
-	position:fixed;
-	top:30px;
-	right:20px;
-	display:none;
-	background: url('arrow_up.png') no-repeat 0px 20px;
-}
-
-.scrollToTop:hover{
-	text-decoration:none;
-}
-
-#map-canvas{
-	width:100%;
-	height:500px;
-}
-
-
-#page_landing {
-  background-image: url(../img/backgrounds/landing-2.jpg);
-  background-size: cover;
-  height: 900px;
-  font-family: 'Roboto', sans-serif;
-}*/
-
-
-h1 {width:70%;text-align: center; padding-top: 5%; padding-bottom:5%; margin: 0 auto; font-weight: 700; font-family: 'Roboto';}
+h1 {width:70%;text-align: center; padding-top: 5%; padding-bottom:2.5%; margin: 0 auto; font-weight: 700; font-family: 'Roboto';}
 
 button { border: none; background-color: transparent; font-style:italic; font-family: 'Roboto'; font-weight: 500; color: white; display: block; font-size: 30px; text-align: center;}
 
+
 .page {
   background-size: cover;
-/*  color: white;*/
   display: block;
 }
 
-#page_landing {background-image: url(../img/backgrounds/landing-2.jpg);   height: 520px;}
+#page_landing {background-image: url(../img/backgrounds/landing-2.jpg); padding-bottom: 5%; background-size: cover;}
+#nav { width: 100%; color: white; padding-top: 2.5%; }
 
-#page_about {background-color:white;height: auto; color: grey; text-align: center;}
+#nav ul {padding: 0; margin: 0 auto; text-align: center;}
+#nav li {font-size: 20px;}
+#nav ul li {display: inline-block; margin: 0 auto}
+.item{list-style: none; width:25%;}
+#nav ul li a {color: white;}
+.break {list-style: none;width: 5%; clear: none;}
 
-#page_menu {background-image:  url(../img/backgrounds/menu.jpg);  height: auto; clear: both; text-align: center; padding-bottom: 10%;}
+#page_about {background-color:white;height: auto; color: grey; text-align: center;   padding-bottom: 5%;background-size: cover;}
+#page_about p {width: 70%; text-align: justify; margin: 0 auto; padding-bottom: 5%;   background-size: cover;}
 
-#page_contact {background-image:  url(../img/backgrounds/about.jpg);   height: 520px;}
+#page_menu {background-image:  url(../img/backgrounds/menu.jpg);  height: auto; clear: both; padding-bottom: 5%;   background-size: cover;}
+#menu {}
 
-#page_about  p, #page_about h2 {width: 70%; text-align: justify; margin: 0 auto;}
+#page_contact {background-image:  url(../img/backgrounds/about.jpg);   height: auto;   background-size: cover; margin: 0 auto; text-align: center;}
+#page_contact h1 {margin: 0 auto; padding-left: 0%; padding-bottom: 5%;}
+
+#contact_option {display: inline; width: 100%; margin: 0 auto; }
+#contact_option h1 {width: 2%; display: inline; text-align: center;margin: 0 auto; font-size: 18px; font-style:normal;}
+#contact_option button {font-weight: 100; font-style: none; font-size: 18px; display: inline;text-align: center;margin: 0 auto;font-style:normal; padding-bottom: 5%;}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+@media screen and (min-width: 320px) {.page {height: 480px;}}
+
+
+@media screen and (min-width: 360px) {.page {height: 640px;}}
+
+@media screen and (min-width: 760px) {
+  .page {height: 500px;}
+  img {right:12%; position: fixed; width:30%; height: auto; top: 0;}
+
+  nav {width: 53%;float: left; position:fixed; text-align: center;padding-top: 1%;}
+
+  .page {height: 700px;}
+  #page_about {background-image:  url(../img/backgrounds/about.jpg);}
+  nav li, nav ul {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  nav li { padding: 3%; width: 15%;}
+
+  nav ul ul a {
+  background: transparent;
+  }
+}
+
+================================================================
+
+/*.scrollToTop{
+  width:100px; 
+  height:130px;
+  padding:10px; 
+  text-align:center; 
+  background: whiteSmoke;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  position:fixed;
+  top:30px;
+  right:20px;
+  display:none;
+  background: url('arrow_up.png') no-repeat 0px 20px;
+}
+
+.scrollToTop:hover{
+  text-decoration:none;
+}
+*/
 
 /*.nav-toggle {
   position: fixed;
@@ -117,55 +148,12 @@ button { border: none; background-color: transparent; font-style:italic; font-fa
 .nav-toggle.active::before {
   font-size: 24px;
   content:"x";
-}*/
+}
 
-/
 #page_menu h1 {padding-top: 5%;}
 #exit {font-size: 50px; color: black; text-align: left;}
 #menu {color: grey; text-align: center;}
 a:active,
 a:hover {
   outline: 0;
-}
-
-#contact_option {display: inline; width: 100%; margin: 0 auto; }
-#page_contact h1 {margin: 0 auto; padding-left: 0%;}
-#contact_option h2 {width: 2%; display: inline; text-align: center;margin: 0 auto; font-size: 45px;}
-#contact_option button {font-weight: 100; font-style: none; font-size: 20px; display: inline;text-align: center;margin: 0 auto;}
-
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@viewport { width: device-width; }
-
-nav li, nav ul{display: none;}
-
-@media screen and (min-width: 320px) {.page {height: 480px;}
-
-}
-@media screen and (min-width: 360px) {.page {height: 640px;}}
-
-@media screen and (min-width: 760px) {
-  .page {height: 500px;}
-  img {right:12%; position: fixed; width:30%; height: auto; top: 0;}
-
-  nav {width: 53%;float: left; position:fixed; text-align: center;padding-top: 1%;}
-
-  .page {height: 700px;}
-  #page_about {background-image:  url(../img/backgrounds/about.jpg);}
-  nav li, nav ul {
-    display: inline-block;
-    padding-left: 0;
-  }
-
-  nav ul {
-    width: 100%;
-  }
-
-  nav li { padding: 3%; width: 15%;}
-
-  nav ul ul a {
-  background: transparent;
-  }
-}
+}*/

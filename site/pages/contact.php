@@ -1,12 +1,14 @@
 <div id="page_contact" class="page">
-    <h1>GET IN TOUCH</h1>
+    <h1>CONTACT</h1>
     <div id="contact_option">
-        <button>Wellington</button>
-        <h2>|</h2>
-        <button>Christchurch</button>
+        <button>WELLINGTON</button>
+        <h1>|</h1>
+        <button>CHRISTCHURCH</button>
     </div>
 
-
+</div>
+<div id="contact"></div>
+<div id="map-canvas"></div>
 <!--     <h2>Wellington</h2>
    
 
@@ -29,4 +31,3 @@
         <li>Sat &amp; Sun 8.30am - late</li>
     </ul> -->
 <!--     <div id="map-canvas"></div> -->
-</div>
