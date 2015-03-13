@@ -2,10 +2,11 @@
 <div id="page_contact" class="page">
     <h1>GET IN TOUCH</h1>
     <div id="contact_option">
-        <button>Wellington</button>
+        <button value="Wellington">Wellington</button>
         <h2>|</h2>
-        <button>Christchurch</button>
+        <button value="Christchurch">Christchurch</button>
     </div>
+    <div id="cityInfo"></div>
 
 
 <!--     <h2>Wellington</h2>
@@ -29,5 +30,5 @@
         <li>Mon - Fri 7am - late</li>
         <li>Sat &amp; Sun 8.30am - late</li>
     </ul> -->
-<!--     <div id="map-canvas"></div> -->
+    <div id="map-canvas"></div>
 </div>
