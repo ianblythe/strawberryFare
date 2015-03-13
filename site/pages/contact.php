@@ -1,3 +1,4 @@
+<a id="04"></a>
 <div id="page_contact" class="page">
     <h1>GET IN TOUCH</h1>
     <div id="contact_option">

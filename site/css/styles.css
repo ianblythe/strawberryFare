@@ -23,7 +23,7 @@ img {right:15%; position: absolute; width:70%; height: auto;}
 
 a{text-decoration: none}
 
-/*.scrollToTop{
+.scrollToTop{
 	width:100px; 
 	height:130px;
 	padding:10px; 
@@ -54,12 +54,16 @@ a{text-decoration: none}
   background-size: cover;
   height: 900px;
   font-family: 'Roboto', sans-serif;
-}*/
+}
 
 
 h1 {width:70%;text-align: center; padding-top: 5%; padding-bottom:5%; margin: 0 auto; font-weight: 700; font-family: 'Roboto';}
 
 button { border: none; background-color: transparent; font-style:italic; font-family: 'Roboto'; font-weight: 500; color: white; display: block; font-size: 30px; text-align: center;}
+
+.hidden{
+  display:none;
+}
 
 .page {
   background-size: cover;
